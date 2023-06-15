@@ -1,0 +1,17 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+    <h2>Ingresar como Docente</h2>
+    <form method="POST" action="">
+        <label for="correo">Correo:</label>
+        <input type="text" id="correo" name="correo" required>
+        <select id="dominio_correo" name="dominio_correo">
+            <option value="@doc.com">@doc.com</option>
+        </select><br><br>
+        <label for="contraseña">Contraseña:</label>
+        <input type="password" id="contraseña" name="contraseña" required><br><br>
+        <label for="asignatura">Asignatura:</label>
+        <input type="text" id="asignatura" name="asignatura" required><br><br>
+        <input type="submit" value="Ver Registro">
+    </form>
+{% endblock %}

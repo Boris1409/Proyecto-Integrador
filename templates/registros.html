@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <h1>Registros de Asistencia</h1>
+    <h3>Docente: {{ docente }}</h3>  <!-- Agregado: Mostrar nombre del docente -->
+    <h3>Asignatura: {{ asignatura }}</h3>  <!-- Agregado: Mostrar nombre de la asignatura -->
+    <h3>ID de la Sala: {{ sala_id }}</h3>  <!-- Agregado: Mostrar ID de la sala -->
+    <table>
+        <thead>
+            <tr>
+                <th>Alumno</th>
+                <th>Fecha</th>
+                <th>Acciones</th>  <!-- Agregado: Columna para acciones -->
+            </tr>
+        </thead>
+        <tbody>
+            {% for registro in registros_asistencia %}
+                <tr>
+                    <td>{{ registro[1] }}</td>
+                    <td>{{ registro[2] }}</td>
+                    <td>
+                        <form action="{{ url_for('borrar_asistencia', asistencia_id=registro[0]) }}" method="POST" class="form-borrar">
+                            <button type="submit" class="borrar-button">Borrar</button>                        
+                        </form>
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
