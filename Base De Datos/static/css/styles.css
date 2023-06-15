@@ -1,0 +1,278 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  background-image: url("/static/imagenes/cool-background.png");
+  text-align: center;
+  color: #fff;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+  color: #fff;
+  text-align: center;
+  font-weight: 300;
+}
+
+table {
+  color: #fff;
+  text-align: center;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  border: 1px solid #ddd;
+  padding: 15px;
+  height: 25px;
+}
+
+.recuadro {
+  color: #fff;
+  text-align: center;
+}
+
+/* * ============================== */
+/* * ==== BARRA NAVEGACIÓN ======== */
+/* * ============================== */
+
+.menu {
+  list-style: none;
+  padding: 0;
+  background: #34B2FA;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+
+}
+
+.menu li {
+  display: inline-block;
+  text-align: center;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #F6FAF6;
+  padding: 20px;
+  display: block;
+  border-radius: 10px;
+
+}
+
+.menu li a:hover {
+  background: #40EFF5;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* * ============================== */
+/* * ======= FORMULARIO =========== */
+/* * ============================== */
+
+form {
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+  background: #3D78D4;
+  border-radius: 10px;
+  /* Redondea los bordes */
+
+}
+
+form label {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+
+}
+
+form .input-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+form .input-group label {
+  flex: 0 0 30%;
+  text-align: right;
+
+
+}
+
+form .input-group .input-field {
+  flex: 1;
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: none;
+  background-color: whitesmoke;
+  color: #000000;
+}
+
+form button {
+  padding: 5px 10px;
+  /* Disminuir el padding puede hacer que el botón sea más pequeño */
+  border-radius: 8px;
+  border: none;
+  background: #3DC7D4;
+  color: #fff;
+  cursor: pointer;
+  width: 80%;
+  /* Ajusta el ancho del botón */
+  height: 40px;
+  /* Ajusta la altura del botón */
+  margin: auto;
+  display: block;
+
+}
+
+form button:hover {
+  background: #47F6D5;
+}
+
+
+
+.form-borrar {
+  max-width: 200px;
+  padding: 5px;
+}
+
+#boton_submit {
+  padding: 12.5px 30px;
+  border: 0;
+  border-radius: 100px;
+  background-color: #3DC7D4;
+  color: #ffffff;
+  font-weight: Bold;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+
+#boton_submit:hover {
+  background-color: #50B4EB;
+  transform: scale(1.1);
+}
+
+#boton_submit:active {
+  background-color: #3D78D4;
+  transition: all 0.25s;
+  -webkit-transition: all 0.25s;
+  box-shadow: none;
+  transform: scale(0.98);
+}
+
+.card {
+  width: 190px;
+  padding: 1.9rem 1.2rem;
+  text-align: center;
+  background: #000000;
+}
+
+
+
+
+
+
+/*css para centrar*/
+#centrar {
+  margin: 0 auto;
+}
+
+
+/* Seccion contacto caja*/
+
+.card {
+  width: fit-content;
+  height: fit-content;
+  background-color: rgb(238, 238, 238);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 25px;
+  gap: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
+  margin: 0 auto;
+
+}
+
+/* for all social containers*/
+.socialContainer {
+  width: 52px;
+  height: 52px;
+  background-color: rgb(44, 44, 44);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition-duration: .3s;
+}
+
+/* instagram*/
+.containerOne:hover {
+  background-color: #d62976;
+  transition-duration: .3s;
+}
+
+/* twitter*/
+.containerTwo:hover {
+  background-color: #00acee;
+  transition-duration: .3s;
+}
+
+/* linkdin*/
+.containerThree:hover {
+  background-color: #0072b1;
+  transition-duration: .3s;
+}
+
+/* Whatsapp*/
+.containerFour:hover {
+  background-color: #128C7E;
+  transition-duration: .3s;
+}
+
+.socialContainer:active {
+  transform: scale(0.9);
+  transition-duration: .3s;
+}
+
+.socialSvg {
+  width: 17px;
+}
+
+.socialSvg path {
+  fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+  animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.contenedor-register {
+  border-radius: 43px;
+  background: #3DC7D4;
+  box-shadow: inset -14px 14px 28px #2e97a1,
+              inset 14px -14px 28px #4cf7ff;
+}
+
