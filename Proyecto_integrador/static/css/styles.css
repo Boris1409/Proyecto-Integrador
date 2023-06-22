@@ -1,0 +1,369 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background-image: url("/static/imagenes/cool-background.png");
+    text-align: center;
+    color: #fff;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    color: #fff;
+    text-align: center;
+    font-weight: 300;
+}
+
+table {
+    color: #fff;
+    text-align: center;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 15px;
+    height: 25px;
+}
+
+.recuadro {
+    color: #fff;
+    text-align: center;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    background: #2aaec2;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.menu li {
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #F6FAF6;
+    padding: 20px;
+    display: block;
+}
+
+.menu li a:hover {
+    background: #ef8354;
+    transition: background-color 0.3s ease-in-out;
+}
+
+form {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    background: #3d94cf;
+    border-radius: 10px; /* Redondea los bordes */
+}
+
+form label {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    
+}
+
+form .input-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+form .input-group label {
+    flex: 0 0 30%;
+    text-align: right;
+    
+
+}
+
+form .input-group .input-field {
+    flex: 1;
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    background-color: whitesmoke;
+}
+
+form button {
+    padding: 5px 10px;  /* Disminuir el padding puede hacer que el botón sea más pequeño */
+    border-radius: 8px;
+    border: none;
+    background: #2aaec2;
+    color: #fff;
+    cursor: pointer;
+    width: 80%;  /* Ajusta el ancho del botón */
+    height: 40px;  /* Ajusta la altura del botón */
+    margin: auto;
+    display: block;
+
+}
+
+form button:hover {
+    background: #ef8354;
+}
+
+.borrar-button {
+    padding: 10px 15px; /* Ajusta el padding según lo que necesites */
+    border: 2px solid #ddd; /* Esto añadirá un borde alrededor del botón */
+    border-radius: 4px; /* Esto redondeará los bordes del botón */
+}
+
+.form-borrar {
+    max-width: 200px; 
+    padding: 5px; 
+}
+
+#boton_submit {
+    padding: 12.5px 30px;
+    border: 0;
+    border-radius: 100px;
+    background-color: #2ba8fb;
+    color: #ffffff;
+    font-weight: Bold;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+  }
+  
+#boton_submit:hover {
+    background-color: #6fc5ff;
+    box-shadow: 0 0 20px #0f111350;
+    transform: scale(1.1);
+  }
+  
+#boton_submit:active {
+    background-color: #3d94cf;
+    transition: all 0.25s;
+    -webkit-transition: all 0.25s;
+    box-shadow: none;
+    transform: scale(0.98);
+  }
+
+  .card {
+    width: 190px;
+    padding: 1.9rem 1.2rem;
+    text-align: center;
+    background: #000000;
+   }
+   
+   /*Inputs*/
+   .field {
+    margin-top: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5em;
+    background-color: #1f2029;
+    border-radius: 4px;
+    padding: .5em 1em;
+   }
+   
+   .input-icon {
+    height: 1em;
+    width: 1em;
+    fill: #ffeba7;
+   }
+   
+   .input-field {
+    background: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    color: #d3d3d3;
+   }
+
+
+  .info {
+    width: 160px;
+    height: 20px;
+    padding: 0;
+    margin: 0 auto;
+    line-height: 20px;
+    background-color: #0055b7;
+    font-size: 12px;
+    color: #fff;
+    font-family: 'opensansbold';
+    text-align: center;
+}
+
+
+.light-button button.bt {
+    position: relative;
+    height: 200px;
+    display: flex;
+    align-items: flex-end;
+    outline: none;
+    background: none;
+    border: none;
+    margin: 0 auto;
+  }
+  
+  .light-button button.bt .button-holder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100px;
+    background-color: #0a0a0a;
+    border-radius: 5px;
+    color: #0f0f0f;
+    font-weight: 700;
+    transition: 300ms;
+    outline: #0f0f0f 2px solid;
+    outline-offset: 20;
+  }
+  
+  .light-button button.bt .button-holder svg {
+    height: 50px;
+    fill: #0f0f0f;
+    transition: 300ms;
+  }
+  
+  .light-button button.bt .light-holder {
+    position: absolute;
+    height: 200px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .light-button button.bt .light-holder .dot {
+    position: absolute;
+    top: 0;
+    width: 10px;
+    height: 10px;
+    background-color: #0a0a0a;
+    border-radius: 10px;
+    z-index: 2;
+  }
+  
+  .light-button button.bt .light-holder .light {
+    position: absolute;
+    top: 0;
+    width: 200px;
+    height: 200px;
+    clip-path: polygon(50% 0%, 25% 100%, 75% 100%);
+    background: transparent;
+  }
+  
+  .light-button button.bt:hover .button-holder svg {
+    fill: rgba(88, 101, 242, 1);
+  }
+  
+  .light-button button.bt:hover .button-holder {
+    color: rgba(88, 101, 242, 1);
+    outline: rgba(88, 101, 242, 1) 2px solid;
+    outline-offset: 2px;
+  }
+  
+  .light-button button.bt:hover .light-holder .light {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(180deg, rgba(88, 101, 242, 1) 0%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0) 100%);
+  }
+  
+
+.input-field{
+  color: #d3d3d3;
+}
+
+/*css para centrar*/
+#centrar {
+  margin: 0 auto;
+}
+
+
+/* Seccion contacto caja*/
+
+.card {
+  width: fit-content;
+  height: fit-content;
+  background-color: rgb(238, 238, 238);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 25px;
+  gap: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
+  margin: 0 auto;
+
+}
+
+/* for all social containers*/
+.socialContainer {
+  width: 52px;
+  height: 52px;
+  background-color: rgb(44, 44, 44);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition-duration: .3s;
+}
+/* instagram*/
+.containerOne:hover {
+  background-color: #d62976;
+  transition-duration: .3s;
+}
+/* twitter*/
+.containerTwo:hover {
+  background-color: #00acee;
+  transition-duration: .3s;
+}
+/* linkdin*/
+.containerThree:hover {
+  background-color: #0072b1;
+  transition-duration: .3s;
+}
+/* Whatsapp*/
+.containerFour:hover {
+  background-color: #128C7E;
+  transition-duration: .3s;
+}
+
+.socialContainer:active {
+  transform: scale(0.9);
+  transition-duration: .3s;
+}
+
+.socialSvg {
+  width: 17px;
+}
+
+.socialSvg path {
+  fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+  animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+

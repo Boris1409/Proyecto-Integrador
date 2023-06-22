@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Asistencia - {{ page_title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='imagenes/logo.png') }}" type="image/x-icon">
+</head>
+<body>
+    <h1>Asistencia</h1>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="http://localhost:5000">Principal</a></li>
+                <li><a href="http://localhost:5000/contacto">Contacto</a></li>
+                <li><a href="http://localhost:5000/sobre_nosotros">Sobre nosotros</a></li>
+                <li><a href="http://localhost:5000/sala/1">Mi sala</a></li>
+            </ul>
+        </nav>
+    </header>
+    {% block content %}{% endblock %}
+
+</body>
+
+<footer>
+    <p>&copy; Universidad de los Lagos - Todos los derechos reservados</p>
+    <p>La Universidad de Los Lagos es una universidad pública chilena, creada en 1993, producto de la fusión de la Universidad Técnica del Estado sede Osorno y la Universidad de Osorno. Tiene su sede central en la ciudad de Osorno, Región de Los Lagos, Chile.</p>
+</footer>
+</html>
+

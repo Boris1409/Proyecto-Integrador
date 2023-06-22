@@ -1,0 +1,53 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+    <h2>Tomar Asistencia</h2>
+    {% if mensaje %}
+        <p>{{ mensaje }}</p>
+    {% endif %}
+   
+    
+    <form method="POST" action="" class="formulario">
+        <div class="input-group">
+            <label for="correo">Correo electrónico:</label>
+            <input type="text" id="correo" name="correo" class="input-field" required>
+        </div>
+        <div class="input-group">
+            <label for="dominio_correo"></label>
+            <select id="dominio_correo" name="dominio_correo" class="input-field" onchange="cambiar_boton()" >
+                <option value="@est.com">@est.com</option>
+                <option value="@doc.com">@doc.com</option>
+            </select>
+        </div>
+        <div class="input-group">
+            <label for="contraseña">Contraseña:</label>
+            <input type="password" id="contraseña" name="contraseña" class="input-field" required>
+        </div>
+        <input type="submit" id="boton_submit" value="Marcar Asistencia">
+    </form>
+   
+
+
+
+
+
+
+
+    <script>
+        function cambiar_boton() {
+            var dominio_correo = document.getElementById("dominio_correo").value;
+            var boton_submit = document.getElementById("boton_submit");
+            if (dominio_correo == "@doc.com") {
+                boton_submit.value = "Ver Registro";
+            } else {
+                boton_submit.value = "Marcar Asistencia";
+            }
+        }
+    </script>
+    {% if clase_info %}
+        <h3>Información de la clase:</h3>
+        <p>Nombre: {{ clase_info.nombre }}</p>
+        <p>Hora de inicio: {{ clase_info.hora_inicio }}</p>
+        <p>Hora de fin: {{ clase_info.hora_fin }}</p>
+    {% endif %}
+{% endblock %}

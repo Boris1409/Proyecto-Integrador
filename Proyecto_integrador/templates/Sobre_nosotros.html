@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Asistencia - {{ page_title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='imagenes/logo.png') }}" type="image/x-icon">
+</head>
+<body>
+    <h1>Asistencia</h1>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="http://localhost:5000">Principal</a></li>
+                <li><a href="http://localhost:5000/contacto">Contacto</a></li>
+                <li><a href="http://localhost:5000/sobre_nosotros">Sobre nosotros</a></li>
+                <li><a href="http://localhost:5000/sala/1">Mi sala</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    {% block content %}{% endblock %}
+
+
+
+
+
+
+
+</body>
+
+<head>
+    <h1 style="color:Snow">Un poco sobre nostros</h1>
+    <p style="color:GainsBoro">Somos un grupo de 6 estudiantes de la Universidad de los lagos, quienes conforman este grupo son: Matías Guzmán, Boris Carrasco, Benjamín Kiel, Franco Garrido, Cristian Cárdenas y Jeremías Maichil.<br>
+        Nosotros buscamos la modernización del método de registro de asistencia de esta institución, debido a la inefeciente manera en la que se regía el control de asistencia. A nosotros como nivel estudiante, se nos asignó un proyecto, el cual, tenía como propósito, el de buscar una manera de mejorar en cierta parte alguna acción que afecte a esta universidad en particular, nosotros de manera proactiva nos percatamos del déficit del método actual de registro de asistencia de la universidad, y en base a ello, nos pusimos manos a la obra en la elaboración de este proyecto.<br>
+        <br>
+        Nos fijamos como meta, la implementación de una página web, con la facilitación del escaneo de códigos QR, el cuál tiene como fin, ayudar a los docentes en la toma de asistencia, presentando un prototipo eficaz, sin problemas de fiabilidad y que sea intuitivo para los estudiantes y docentes de esta institución.
+        Y aquí está, el resultado de nuestro elaborado trabajo y esfuerzo, para cualquier duda o consulta, pueden ponerse en contacto con nosotros en la pestaña de apartado de "Contacto".<br>
+    Proyecto de registro de asistencia 'RegAsis 06'.
+    </p>
+</head>
+
+<footer>
+    <p>&copy; Universidad de los Lagos - Todos los derechos reservados</p>
+
+</footer>
+</html>
